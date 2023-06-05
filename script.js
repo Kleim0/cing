@@ -157,12 +157,12 @@ function Enemy(x, y, dx, dy) {
 
 function displayHealth(x, y, maxHealth, curHealth, radius) {
 	c.beginPath();
-	c.rect(x-15, y+radius+10, 30, 5);
+	c.rect(x-15, y+radius+15, 30, 5);
 	c.fillStyle = 'red';
 	c.fill();
 	c.closePath();
 	c.beginPath();
-	c.rect(x-15, y+radius+10, curHealth/maxHealth * 30, 5);
+	c.rect(x-15, y+radius+15, curHealth/maxHealth * 30, 5);
 	c.fillStyle = 'lightgreen';
 	c.fill();
 	c.closePath();
