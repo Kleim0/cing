@@ -1,0 +1,17 @@
+* {
+	margin:0;
+	padding:0;
+	--0: 240, 246, 240; /* white (text) */
+	--2: 44, 50, 55; /* light (body bg) */
+	--3: 37, 43, 48; /* medium (element bg) */
+	--4: 30, 36, 41; /* dark (border)*/
+	--purp: 90, 71, 128; /* purple (shadow/accent)*/
+}
+
+body {
+	height: 100vh;
+	overflow: hidden;
+	background-color: rgba(var(--2));
+	color: rgba(var(--0));
+	font-family: "Consolas", "Open Sans";
+} 
