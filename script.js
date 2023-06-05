@@ -16,7 +16,7 @@ let game = {
 		this.score = 0;
 		this.paused = true;
 		player.health = player.maxHealth;
-		bullets = []
+		bullets = [];
 		enemies = [];
 	},
 
