@@ -11,7 +11,67 @@
 body {
 	height: 100vh;
 	overflow: hidden;
-	background-color: rgba(var(--2));
+	background: rgba(var(--2));
 	color: rgba(var(--0));
 	font-family: "Consolas", "Open Sans";
-} 
+	user-select: none;
+}
+
+#sounds {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+}
+
+#thing {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#thingText {
+	font-size: 2em;
+}
+
+#canvas {
+	position: absolute;
+}
+
+#popupContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#popup {
+	font-size: 2em;
+	border: 4px rgba(var(--4)) solid;
+	border-radius: 4px;
+	background-color: rgba(var(--3));
+	padding: 20px;
+}
+
+#popupRestart {
+	position: absolute;
+	top: 475px;
+	font-size: 2em;
+	border: 4px rgba(var(--4)) solid;
+	border-radius: 4px;
+	background-color: rgba(var(--3));
+	padding: 15px;
+
+	transition-duration: 300ms;
+}
+
+#popupRestart:hover {
+	background-color: rgba(var(--3), 0.5);
+}
